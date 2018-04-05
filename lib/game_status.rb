@@ -37,6 +37,6 @@ end
 
 def winner(board)
   if won?(board) != nil
-  win_time = board[won?(board)[6]]
+  win_time = board[won?(board)[2]]
  end
 end
