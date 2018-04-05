@@ -24,11 +24,8 @@ end
 def full?(board)
   WIN_COMBINATIONS.each do |filled|
    if board[filled[0]] == board [filled[1]] && position_taken?(board, filled[2])
-return true
+    else position_taken?(board, filled.nil?)
+end
 
-else position_taken?(board, filled.nil?)
-
-  end
- return false
 end
 end
