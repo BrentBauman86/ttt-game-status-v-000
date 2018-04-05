@@ -27,3 +27,9 @@ board.none? do |filled|
 
    end
  end
+
+def draw(board)
+  full?(board)
+end
+
+    
