@@ -26,4 +26,5 @@ def full?(board)
    if board[filled[0]] == board [filled[1]] && position_taken?(board, filled[2])
 
    end
+ end
 end
