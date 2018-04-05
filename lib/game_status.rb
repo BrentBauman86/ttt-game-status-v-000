@@ -22,8 +22,9 @@ def won?(board)
 end
 
 def full?(board)
-  WIN_COMBINATIONS.each do |filled|
-  board[filled[0]] == board[filled[1]] && position_taken?(board, filled[2])
+  
+  WIN_COMBINATIONS.none? do |filled|
+  filled == " " || filled.nil?
 
    end
  end
