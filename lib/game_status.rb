@@ -28,6 +28,7 @@ board.none? do |filled|
  end
 
 def draw(board)
-  full?(board) == true && won?(board) == nil
+
+won?(board) == nil && full?(board) == true
 
 end
