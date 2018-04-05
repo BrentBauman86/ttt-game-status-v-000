@@ -34,3 +34,7 @@ end
 def over?(board)
   full?(board) == true || won?(board) != nil
 end
+
+def winner(board)
+  won?(board) == true && position_taken?(board, "X")
+  
