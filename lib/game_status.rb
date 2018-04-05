@@ -32,5 +32,5 @@ full?(board) == true && won?(board) == nil
 end
 
 def over?(board)
-  full?(board) == true || won?(board) == true || won?(board) == nil
+  full?(board) == true || won?(board) == true && won?(board) == nil
 end
