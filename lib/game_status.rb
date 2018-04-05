@@ -36,5 +36,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board) == position_taken?(board, "X")
+  won?(board) != nil
+  win_time = board[won?(board)[0]]
 end
