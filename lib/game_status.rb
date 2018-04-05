@@ -22,7 +22,7 @@ def won?(board)
 end
 
 def full?(board)
-  
+
   WIN_COMBINATIONS.none? do |filled|
   filled == " " || filled.nil?
 
