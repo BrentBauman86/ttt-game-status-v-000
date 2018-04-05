@@ -24,12 +24,10 @@ end
 def full?(board)
 board.none? do |filled|
   filled == " " || filled.nil?
-
-   end
+  end
  end
 
 def draw(board)
-  full?(board)
+  full?(board) == won?(board)
+true
 end
-
-    
