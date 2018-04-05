@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.find do |win_plz|
+ WIN_COMBINATIONS.find do |win_plz|
  board[win_plz[0]] == board[win_plz[1]] && board[win_plz[0]] == board[win_plz[2]] && position_taken?(board, win_plz[1])
  end
 end
@@ -32,5 +32,5 @@ full?(board) == true && won?(board) == nil
 end
 
 def over?(board)
-  full?(board) == true && won?(board) == nil
+  full?(board) == true || won?(board) == true
 end
