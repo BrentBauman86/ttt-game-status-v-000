@@ -24,6 +24,6 @@ end
 def full?(board)
   board.each do |filled|
   board[filled[0]] == board[filled[1]] && position_taken?(board, filled[2])
-
+return true
    end
  end
