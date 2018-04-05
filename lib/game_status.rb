@@ -23,7 +23,7 @@ end
 
 def full?(board)
   board.each do |filled|
-   if board[filled[0]] == board[filled[1]] && board[filled[0]] == board [filled[2]] && position_taken?(board, filled[1])
+  board[filled[0]] == board[filled[1]] && board[filled[0]] == board [filled[2]] && position_taken?(board, filled[1])
 
    end
  end
