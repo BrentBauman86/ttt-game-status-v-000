@@ -37,4 +37,4 @@ end
 
 def winner(board)
   won?(board) == true && position_taken?(board, "X")
-  
+end
